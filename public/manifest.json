@@ -11,9 +11,10 @@
     "icon_gray": "icons/icon_gray.png"
   },
   "permissions": [
-    "GameInfo",
-    "Hotkeys"
-  ],
+      "GameInfo",
+      "GameEvents",
+      "Hotkeys"
+    ],
   "data": {
     "start_window": "background",
     "windows": {
