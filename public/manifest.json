@@ -2,35 +2,42 @@
   "manifest_version": 1,
   "type": "WebApp",
   "meta": {
-    "name": "The Mental Edge V2",
+    "name": "The Mental Edge",
     "author": "Your Name",
     "version": "0.1.0",
-    "minimum-overwolf-version": "0.188.0",
+    "minimum-overwolf-version": "0.170.0",
     "description": "A companion app to combat tilt and reinforce good habits.",
     "icon": "icons/icon.png",
     "icon_gray": "icons/icon_gray.png"
   },
   "permissions": [
-      "GameInfo",
-      "GameEvents",
-      "Hotkeys"
-    ],
+    "GameInfo",
+    "GameEvents",
+    "Hotkeys"
+  ],
   "data": {
     "start_window": "background",
     "windows": {
       "background": {
         "file": "index.html",
-        "is_background_page": true,
-        "background_optimization": true
+        "is_background_page": false,
+        "background_optimization": true,
+        "in_game_only": false,
+        "transparent": false,
+        "resizable": true,
+        "size": {
+          "width": 1200,
+          "height": 1200
+        }
       },
       "in_game": {
         "file": "index.html",
-        "in_game_only": true,
-        "transparent": true,
-        "resizable": false,
+        "in_game_only": false,
+        "transparent": false,
+        "resizable": true,
         "size": {
-          "width": 400,
-          "height": 500
+          "width": 1200,
+          "height": 1200
         }
       }
     },
@@ -47,7 +54,7 @@
         "event_data": {
           "game_ids": [ 5426 ]
         },
-        "start_minimized": true
+        "start_minimized": false
       }
     ],
     "game_events": [ 5426 ]
